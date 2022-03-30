@@ -1,0 +1,249 @@
+//=================================================================
+//============================HEADER===============================
+//=================================================================
+@media (max-width: 1120px){
+    .menu__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__phone-link{
+        width: 30px;
+        height: 30px;
+        top: 20px;
+    }
+    .header__title {
+    text-align: center;
+    margin: auto auto auto auto;
+    }
+}
+
+@media (max-width: 768px){
+    .burger {
+        z-index: 300;
+        display: block;
+        top: 25px;
+        right: 25px;
+        transition: all .5s;
+
+                &__span::before {
+                    transition: all .5s;
+                    content: '';
+                    position: absolute;
+                    top: -9px;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #232222;
+                }
+                &__span::after {
+                    transition: all .5s;
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #232222;
+                }
+        }
+                .burger.active .burger__span{
+                    background-color: transparent;
+                }
+                .burger.active .burger__span::before {
+                    transform: rotate(45deg);
+                    top: 0px;
+                    height: 2px;
+
+
+                }
+                .burger.active .burger__span::after {
+
+                    bottom: 0px;
+                    height: 2px;
+                    transform: rotate(-45deg);
+                }
+
+    .header__top {
+        padding: 20px;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+        width: 250px;
+        height: 100vh;
+        margin-left: auto;
+        background-color: #fff;
+        position: absolute;
+        top: -100%;
+        right: 0;
+        transition: all .5s ease-out;
+    }
+    .header__top.active {
+        top: 0%;
+    }
+    .menu__list{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+    .menu__list-item{
+        margin-bottom: 10px;
+    }
+    .header__phone-link{
+        top: -8px;
+        left: 35%;
+    }
+    .header__logo-link{
+        margin-bottom: 20px;
+        transform: rotate(90deg);
+        position: relative;
+        left: -23px;
+    }
+    .header__inner{
+        padding: 27px 0px;
+    }
+    .header__title {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    color: #001E64;
+    max-width: 589px;
+    margin: 100px auto auto auto;
+    }
+}
+
+@media (max-width: 660px){
+    .header__title {
+    text-align: center;
+    font-size: 63px;
+    line-height: 81px;
+    }
+}
+
+@media (max-width: 540px){
+    .header__title {
+    margin-top: 150px;
+    font-size: 50px;
+    line-height: 70px;
+    }
+    .header__inner{
+        padding: 0;
+    }
+    .header__slider{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 440px){
+    .header__title {
+    font-size: 44px;
+    line-height: 50px;
+    }
+    .header__slider-item-box {
+    overflow: hidden;
+    min-height: 250px;
+    padding: 10px 0px 10px 60px;
+    }
+    .slick-arrow {
+    left: 16px;
+    }
+    .header__slider-inner .slick-dots {
+    top: 76px;
+    left: 12px;
+    }
+}
+
+@media (max-width: 320px){
+    .header__title{
+        font-size: 37px;
+    }
+    .header__slider-link {
+    font-size: 18px;
+    padding: 14px 50px;
+}
+}
+
+//=================================================================
+//============================BENEFITS==============================
+//=================================================================
+
+@media (max-width: 1220px){
+    .benefits{
+        display: none;
+    }
+}
+
+//=================================================================
+//===========================INFO==================================
+//=================================================================
+
+@media (max-width: 1024px){
+
+    .info__posts {
+        column-gap: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .info__inner {
+        padding: 50px 0;
+    }
+    .info__posts {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 630px){
+    .info__posts {
+        column-count: 1;
+        max-height: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+//=================================================================
+//=======================CONTACTS==================================
+//=================================================================
+
+@media (max-width: 660px){
+    .contacts {
+        background-image: none;
+    }
+    .contacts__info {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    }
+}
+
+
+//=================================================================
+//===========================FOOTER================================
+//=================================================================
+
+@media (max-width: 768px){
+    .footer__inner{
+        align-items: center;
+        padding: 20px;
+    }
+    .footer__social{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__social-link{
+        margin-bottom: 10px;
+    }
+    .footer__logo-link{
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 425px){
+    .footer__logo-link{
+        display: none;
+    }
+}
